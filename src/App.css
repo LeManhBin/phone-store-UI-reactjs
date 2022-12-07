@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@100&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: #EFF5F5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input,button {
+  border: none;
+  outline: none;
+}
+/* category */
+.content-width {
+  width: 75%;
+}
+.category {
+  width: 25%;
+  height: 510px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.category img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.category span {
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+.category .box {
+  transition: .5s;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.category .box:hover {
+  background-color: #EFF5F5;
+} 
+/*  */
+.home-slide {
+  height: 510px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+.box-slide .slide img {
+  width: 1000px;
+  height: 510px;
+}
+/*Flash  */
+.flash {
+  width: 90%;
+  margin: 0 auto;
+}
+.heading i {
+  color: #DC5F00;
+}
+.heading {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  padding: 30px 0;
+  font-size: 30px;
 }
+/* .flash-container .box{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+} */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.card-container .box {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.card-container .box:hover {
+  transform: translateY(-10px);
+}
+.box {
+  margin: 0 10px;
+}
+.box .product .img .discount {
+  background-color: #DC5F00;
+  padding: 5px 7px;
+  position: absolute;
+  right: 0;
+  border-radius: 0px 10px 0px 10px;
+  color: #eee;
+}
+.box .product img {
+  text-align: center;
+}
+.box .product .price {
+  display: flex;
+  justify-content: space-between;
+}
+.box .product .price button {
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+.box .product .price button:hover {
+  color: #DC5F00;
+}
+.rate {
+  color: #FED049;
+}
+.control-btn .next,
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #FED049;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 10;
+  font-size: 20px;
+}
+.control-btn .next {
+  right: -20px;
+}
+.control-btn .prev {
+  left: -20px;
+}
+.control-btn .next i,
+.control-btn .prev i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+/* top categori */
+.heading-cate i {
+  color:  #DC5F00;
+}
+.heading-cate {
+  width: 100%;
+}
+.heading-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 0;
+  font-size: 30px;
+}
+.heading-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 0;
+  font-size: 20px;
+}
+.heading-right span,i {
+  cursor: pointer;
+}
+.flex-top {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/*  */
+.slick-list {
+  width: 1200px;
+}
+/*  */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
